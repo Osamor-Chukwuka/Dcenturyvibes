@@ -42,8 +42,8 @@ export default function NavBar() {
                         <div
                             className="group relative"
                             onClick={() => setDropdownOpen(!dropdownOpen)}
-                            // onMouseEnter={() => setDropdownOpen(true)}
-                            // onMouseLeave={() => setDropdownOpen(false)}
+                        // onMouseEnter={() => setDropdownOpen(true)}
+                        // onMouseLeave={() => setDropdownOpen(false)}
                         >
                             <button className="flex items-center text-gray-600 hover:text-purple-600 transition-colors">
                                 Get Involved
@@ -93,10 +93,13 @@ export default function NavBar() {
             {isOpen && (
                 <div className="md:hidden bg-white border-t">
                     <div className="space-y-1 px-4 pt-2 pb-3">
-                        <a href="#about" className="block hover:bg-purple-50 px-3 py-2 text-gray-600">
+                        <a href="/" className="block hover:bg-purple-50 px-3 py-2 text-gray-600">
+                            Home
+                        </a>
+                        <a href="about-us" className="block hover:bg-purple-50 px-3 py-2 text-gray-600">
                             About Us
                         </a>
-                        <a href="#results" className="block hover:bg-purple-50 px-3 py-2 text-gray-600">
+                        <a href="results" className="block hover:bg-purple-50 px-3 py-2 text-gray-600">
                             Our Results
                         </a>
 
@@ -111,17 +114,17 @@ export default function NavBar() {
 
                             {dropdownOpen && (
                                 <div className="pl-4">
-                                    <a href="#donate" className="block hover:bg-purple-50 px-3 py-2 text-gray-600">
+                                    <a href="donate" className="block hover:bg-purple-50 px-3 py-2 text-gray-600">
                                         Donate
                                     </a>
-                                    <a href="#events" className="block hover:bg-purple-50 px-3 py-2 text-gray-600">
+                                    <a href="events" className="block hover:bg-purple-50 px-3 py-2 text-gray-600">
                                         Events
                                     </a>
                                 </div>
                             )}
                         </div>
 
-                        <a href="#contact" className="block hover:bg-purple-50 px-3 py-2 text-gray-600">
+                        <a href="contact-us" className="block hover:bg-purple-50 px-3 py-2 text-gray-600">
                             Contact Us
                         </a>
                     </div>
